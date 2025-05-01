@@ -21,7 +21,7 @@ public class assertiondemo {
         // Use explicit wait for the username field
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username"))).sendKeys("Admin");
-
+ 
         // Use explicit wait for the password field
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys("admin123");
 
